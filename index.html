@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda All Black</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="wsp" href="https://wa.me/5491131093043">
+        <img src="imagenes/wpp.png" alt="wsp">
+    </a>
+    <a class="arrow" href="#index">
+        <img src="imagenes/flecha.png" alt="home">
+    </a>
+    <div id="header" class="parallax">
+        <header>
+            <a name="index"></a>
+                <nav class="navbar navbar-dark bg-dark">
+                    <a href="index.html"><p class="titulo">All Black</p></a>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#contacto">Contacto <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+                </nav>
+        </header>
+    </div>
+    <div class="prod">
+        <h2>Productos All Black</h2>
+        <main id="contenedor-productos">
+        </main>
+    </div>
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+            <button id="finalizarCompra" class="btn btn-success" >FINALIZAR COMPRA</button>
+        </div>
+    </div>
+    <section class="contact">
+        <div class="u-wrapper">
+          <div class="contact-content">
+            <form id="form" action="" class="form">
+              <a name="contacto"></a>
+              <h3 class="tag"><span>CONTACTO</span></h3>
+              <label for="name">Nombre Completo <span>*</span></label>
+              <input name="name" required type="text" id="name" placeholder="Juan">
+              <label for="email">Correo electrónico <span>*</span></label>
+              <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
+              <label for="message">Consultas</label>
+              <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+              <button type="submit" class="btn btn-success">Enviar</button>
+              <button type="reset" class="btn btn-danger">Borrar</button>
+            </form>
+            <a href="mailto:arsarquis@gmail.com" id="trucazo"></a>
+          </div>
+        </div>
+    </section>
+    <footer class="bg-dark p-3 mt-5">
+        <p class="text-center m-0">Tienda de ropa All black</p>
+    </footer>
+    <script src="modal.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
