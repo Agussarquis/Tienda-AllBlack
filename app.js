@@ -151,7 +151,11 @@ actualizarCarrito();
 //alert compra exitosa
 $(document).ready(function(){
     $("#finalizarCompra").click(function finalizarCompra(){
-      alert("excelente, estas a un solo paso!");
+        Swal.fire(
+            'Excelente!',
+            'Gracias por confiar en nosotros!',
+            'success'
+          )
     }); 
 });
 
